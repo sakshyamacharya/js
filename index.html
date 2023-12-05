@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name ="sakshyam acharya"
+        let x = 1.1
+        let isTrue = true
+        let names = ["sakshyam","sakshyam acharya","21"]
+
+        console.log(name)
+
+        console.log(2+4)
+        console.log(2*4)
+        console.log(2-4)
+        console.log(2/4)
+
+        let person = {
+            first_name: "sakshyam"
+
+        }
+        console.log(person)
+
+        let isOpen = false
+        if(isOpen == true){
+            console.log("OPEN!!")
+        }else{
+            console.log("Closed!")
+
+        }
+            // if we put 2 equal to sign string ma xa bhaney ni compare hunxa 
+            // tara 3 ta xa bhaney chai strictly herxa
+        const a = "2"
+        const b = 2
+        if(a === b){                            
+            console.log("EQUAL")
+        }else {
+            console.log("NOT EQUAL")
+        }
+        
+
+
+
+        function add(a,b) {
+            return a+b
+        }
+        const sub = function(a,b){
+            return a-b
+        }
+
+        // arrow method
+        const mul = (a,b) =>{
+            return a*b
+        }
+        
+        const div = (a,b) =>{
+            return a/b
+        }
+
+
+        console.log(mul(2,4))
+        
+        console.log(add(5,4))
+        
+        console.log(sub(8,4))
+
+        console.log(div(8,4))
+
+// finding prime number
+        for (let i=1;i<50;i++){
+            let rem = i%2;
+            if(rem === 0){
+                console.log(i)
+            }
+            
+        }
+
+// odd number
+        for (let i=1;i<20;i+=2){
+           
+                console.log(i)
+        }
+        
+        let numbers = [1,2,3,4,5,6,7,8,9,10]    
+        let odd_numbers = numbers.filter(function(a){
+        console.log(a)
+        if(a%2 !==0){
+        return a
+        }
+        
+        })
+
+        const add_hundred = (a) => {
+            return 100 + a
+        }
+        let new_numbers = numbers.map(add_hundred)
+
+        console.log(new_numbers)
+
+
+
+
+
+    </script>
+</body>
+</html>
